@@ -1,5 +1,6 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import DisplayPlayers from '../src/components/DisplayPlayers';
 import './App.css';
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Women's World Cup</h1>
+        <DisplayPlayers players={this.state.players} />
       </div>
     );
   }
