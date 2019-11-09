@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDarkMode } from '../hooks/useDarkMode';
 import PlayerCard from './PlayerCard';
 
@@ -12,6 +12,7 @@ const DisplayPlayers = props => {
 
   return (
     <div>
+      <p>Toggle Light/Dark Mode</p>
       <div className="toggle-darkmode">
         <div
           onClick={toggleMode}
