@@ -37,6 +37,23 @@ code {
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
+  color: #fff !important;
+  background-color: #313843 !important;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: flex-end;
+  margin-bottom: 50px;
 }

@@ -12,20 +12,24 @@ const DisplayPlayers = props => {
 
   return (
     <div>
-      <p>Toggle Light/Dark Mode</p>
-      <div className="toggle-darkmode">
-        <div
-          onClick={toggleMode}
-          className={darkMode ? 'toggle toggled' : 'toggle'}
-        />
+      <div className="toggle-group">
+        <p>Toggle Light/Dark Mode</p>
+        <div className="toggle-darkmode">
+          <div
+            onClick={toggleMode}
+            className={darkMode ? 'toggle toggled' : 'toggle'}
+          />
+        </div>
       </div>
-      {props.players.map(player => (
-        <PlayerCard
-          key={player.id}
-          name={player.name}
-          country={player.country}
-        />
-      ))}
+      <div className="cards">
+        {props.players.map(player => (
+          <PlayerCard
+            key={player.id}
+            name={player.name}
+            country={player.country}
+          />
+        ))}
+      </div>
     </div>
   );
 };
