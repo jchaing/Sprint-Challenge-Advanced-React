@@ -3,8 +3,8 @@ import React from 'react';
 const PlayerCard = props => {
   return (
     <div>
-      <h2>{props.name}</h2>
-      <p>{props.country}</p>
+      <h2 data-testid="playerName">{props.name}</h2>
+      <p data-testid="countryName">{props.country}</p>
     </div>
   );
 };
