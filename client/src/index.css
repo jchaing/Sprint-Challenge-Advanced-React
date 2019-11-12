@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.toggle-darkmode {
+  background: gray;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: #fff;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+  background: #313843
+}
+
+.dark-mode {
+  color: #fff !important;
+  background-color: #313843 !important;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: flex-end;
+  margin-bottom: 50px;
+}
